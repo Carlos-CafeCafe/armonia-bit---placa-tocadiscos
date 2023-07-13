@@ -7,15 +7,14 @@ input.onButtonPressed(Button.A, function () {
 })
 input.onButtonPressed(Button.B, function () {
     radio.sendNumber(opción)
-    basic.showNumber(opción)
     basic.showString("" + (Opciones[opción]))
-    basic.pause(5000)
+    basic.pause(2000)
     basic.showString("A para elegir")
 })
 let opción = 0
 let Opciones: string[] = []
 radio.setGroup(3)
 radio.setTransmitPower(7)
-Opciones = ["Para Elisa", "Feliz Cumpleaños"]
+Opciones = ["1", "2"]
 basic.showString("A para elegir")
 opción = -1
